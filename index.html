@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">Other page</a>
+    </nav>
+
+    <main>
+      <details>
+        <summary>Collapse</summary>
+        <p>Это <mark>учебный</mark> сайт</p>
+      </details>
+
+      <audio></audio>
+
+      <video></video>
+
+      <iframe
+        width="500"
+        height="300"
+        src="https://www.youtube.com/embed/RGpm3n90Z1A"
+        title="Аватар 2: Путь воды - разбор трейлера. Что не так с сюжетом?"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <hr />
+
+      <dialog open>
+        <h2>Dialog</h2>
+      </dialog>
+
+      <picture>
+        <source media="(min-width:650px)" srcset="img_pink_flowers.jpg" />
+        <source media="(min-width:465px)" srcset="img_white_flower.jpg" />
+        <img src="img_orange_flowers.jpg" alt="Flowers" style="width: auto" />
+      </picture>
+
+      <h1>The figure and figcaption element</h1>
+
+      <figure>
+        <img src="pic_trulli.jpg" alt="Trulli" style="width: 100%" />
+        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+      </figure>
+
+      <header>
+        <h3>Header</h3>
+      </header>
+
+      <pre>
+      Lorem, ipsum.   
+      Lorem ipsum dolor sit amet.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ex.
+      Lorem ipsum dolor sit.   
+    </pre
+      >
+
+      <pre>
+      <code>
+        { Name: Bauyrzhan
+        Surname: Zhappasbay}
+      </code>
+    </pre>
+
+      <h1>Home page</h1>
+
+      <aside>
+        <h2>SideBar</h2>
+      </aside>
+
+      <section>
+        <h2>Section 1</h2>
+      </section>
+
+      <section>
+        <h2>Section 2</h2>
+      </section>
+
+      <article>
+        <h4>Article 1</h4>
+      </article>
+
+      <article>
+        <h4>Article 2</h4>
+      </article>
+
+      <footer>
+        <h5>Footer</h5>
+      </footer>
+    </main>
+
+    <h2>Login Form</h2>
+    <form id="login-form" method="GET">
+      <input type="text" name="username" />
+    </form>
+    <button type="submit" form="login-form">Login</button>
+
+    <hr />
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+      </tr>
+      <td>Bauyrzhan</td>
+      <td>Zhappasbay</td>
+      <tfoot>
+        <td>Test</td>
+        <td>Test 2</td>
+      </tfoot>
+    </table>
+
+    <h2>HTML Table</h2>
+
+    <table>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+    </table>
+
+    <ul>
+      <!-- unodered -->
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+      <li>
+        <ul>
+          <li>list 1</li>
+          <li>list 2</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ol>
+      <!-- odered -->
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+      <li>
+        <ul>
+          <li>list 1</li>
+          <li>list 2</li>
+        </ul>
+      </li>
+    </ol>
+
+    <ol type="A">
+      <!-- odered -->
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+    </ol>
+
+    <ol type="a">
+      <!-- odered -->
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+    </ol>
+
+    <ol type="I">
+      <!-- odered -->
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+    </ol>
+
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+  </body>
+</html>
